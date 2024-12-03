@@ -1,49 +1,228 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head> 
-    <title> Pet Adoption Agency </title>
-    <link href="style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Adoption Agency</title>
+    <style>
+      /* General Styling */
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #fef7ff; /* soft pink */
+        font-family: 'Poppins', sans-serif;
+        color: #6f4e37; /* Cute brown color */
+      }
+
+      /* Header */
+      header {
+        background-color: #ffb3d9; /* light pink */
+        color: #6f4e37; /* cute brown */
+        padding: 20px;
+        text-align: center;
+        border-radius: 0 0 20px 20px;
+      }
+
+      header nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      header nav ul li {
+        display: inline;
+        margin: 0 15px;
+      }
+
+      header nav ul li a {
+        color: #6f4e37;
+        font-weight: 600;
+        text-decoration: none;
+        font-size: 1.2em;
+      }
+
+      header nav ul li a:hover {
+        color: #ff66cc;
+        text-decoration: underline;
+      }
+
+      /* Main container */
+      .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .intro {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      .intro h1 {
+        color: #ff66cc;
+        font-size: 3em;
+      }
+
+      .intro p {
+        font-size: 1.1em;
+        line-height: 1.6em;
+        color: #6f4e37;
+      }
+
+      .pets h2 {
+        text-align: center;
+        color: #ff66cc;
+        font-size: 2.5em;
+        margin-bottom: 30px;
+      }
+
+      /* Pet Grid */
+      .pet-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+        justify-items: center;
+      }
+
+      .pet-card {
+        background-color: white;
+        border-radius: 15px;
+        padding: 20px;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 240px;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .pet-card:hover {
+        transform: scale(1.05);
+      }
+
+      .pet-card img {
+        border-radius: 10px;
+        margin-bottom: 10px;
+      }
+
+      .pet-card h3 {
+        color: #ff66cc;
+        font-size: 1.4em;
+      }
+
+      .pet-card p {
+        color: #6f4e37;
+        font-size: 1em;
+      }
+
+      .adopt-link {
+        display: inline-block;
+        background-color: #ff66cc;
+        color: white;
+        padding: 12px 20px;
+        border-radius: 30px;
+        text-decoration: none;
+        font-weight: bold;
+        margin-top: 20px;
+        transition: background-color 0.3s ease;
+      }
+
+      .adopt-link:hover {
+        background-color: #ff3385;
+      }
+
+      /* Footer */
+      footer {
+        background-color: #ffb3d9;
+        color: #6f4e37;
+        padding: 20px;
+        text-align: center;
+        margin-top: 50px;
+        border-radius: 20px 20px 0 0;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .pet-list {
+          grid-template-columns: 1fr 1fr;
+        }
+
+        .pet-card {
+          width: 80%;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .pet-list {
+          grid-template-columns: 1fr;
+        }
+
+        .pet-card {
+          width: 90%;
+        }
+
+        header nav ul li {
+          margin: 0 10px;
+        }
+      }
+    </style>
   </head>
-  <body style="background-color:#ef94ff;">
-<p>Hello, welcome to the Pet Adoption Agency! Here you will find domesticated animals such as cats and dogs! We also have a section for rare and exotic creatures! 
-Please adopt a pet today! These creatures need a loving and caring home! We also have affordable prices, the price can range from $10 to $25 depending on the nature of 
-the animal! If you adopt a pet today, you can get a free "Saving lives" hoodie with our logo embroided on the back! </p>
+  <body class="cute-theme">
 
+    <!-- Header Section -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="PetAdoption.html">Adopt a Pet</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<br>
+    <!-- Main Section -->
+    <main class="container">
+      <section class="intro">
+        <h1>Welcome to the Pet Adoption Agency!</h1>
+        <p>
+          Here you will find domesticated animals such as cats and dogs, as well as rare and exotic creatures. Adopt a pet today and give them the loving home they deserve! 
+          Prices range from $10 to $25, and when you adopt, you’ll receive a cute "Saving Lives" hoodie with our logo embroidered on the back!
+        </p>
+      </section>
 
-<p>Below you will find a list of pets that we have!</p>
-    
-<li>Nelly - the cat</li>     
-<br>
-    
-<img src="nelly.jpg" width ="200" height ="150" alt="cat">
-    
- <br>   
-    
-<p>This is a tabby cat that is 5 years old and she likes to chase mice.</p>    
-    
-<br>
-
-<li>Bengi - the dog</li>
-
-<img src="benji.jpg" width ="200" height ="150" alt="dog">
-<br>
-    
-<p> This is a golden retriever dog that is 7 years old. His owner passed away and he was put into this shelter.</p>
-
-<br>
-    
-<li>Nooru - the fish</li>   
-<br>
-<img src="fish.jpg" width ="200" height ="150" alt="fish">
-<br>
-<p>This is an exotic fish from New England.</p>
-
- <li><a href="PetAdoption.html"> Adopt a Pet Page!</a></li>  
+      <section class="pets">
+        <h2>Our Adorable Pets</h2>
         
-  
-        
+        <div class="pet-list">
+          <!-- Pet 1 - Nelly the Cat -->
+          <div class="pet-card">
+            <img src="nelly.jpg" width="200" height="150" alt="Nelly the cat">
+            <h3>Nelly - the Cat</h3>
+            <p>A 5-year-old tabby cat who loves to chase mice!</p>
+          </div>
+          
+          <!-- Pet 2 - Bengi the Dog -->
+          <div class="pet-card">
+            <img src="benji.jpg" width="200" height="150" alt="Bengi the dog">
+            <h3>Bengi - the Dog</h3>
+            <p>A 7-year-old golden retriever. His owner passed away, and he needs a loving home.</p>
+          </div>
+          
+          <!-- Pet 3 - Nooru the Fish -->
+          <div class="pet-card">
+            <img src="fish.jpg" width="200" height="150" alt="Nooru the fish">
+            <h3>Nooru - the Fish</h3>
+            <p>An exotic fish from New England. Unique and beautiful!</p>
+          </div>
+        </div>
+
+        <p>
+          <a href="PetAdoption.html" class="adopt-link">Adopt a Pet Now!</a>
+        </p>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>&copy; 2024 Pet Adoption Agency | All Rights Reserved</p>
+    </footer>
 
   </body>
 </html>
