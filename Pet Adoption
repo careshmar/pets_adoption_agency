@@ -1,1 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <title> Pet Adoption Agency </title>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body style="background-color:#ef94ff;">
+<p> Below are different types of animals we have at our Animal Shelter! </p>
 
+
+<br>
+
+
+<li> cats </li>     
+<li> </>
+        
+  
+        
+
+  </body>
+</html>
