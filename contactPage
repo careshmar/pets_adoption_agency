@@ -6,11 +6,11 @@
     <title>Pet Adoption Agency</title>
   
   </head>
-  <body>
+  <body style>
 <h2>Below you will find the contact information for the agency and my personal email! </h2>
 <br>
-<li> Agency email - petadoptme@gmail.com</li>
-<li> Personal email - careshmar@nycstudents.net </li>
+<li style = "color:pink;font-size:30px;"> Agency email - petadoptme@gmail.com</li>
+<li style = "color:pink;font-size:30px;> Personal email - careshmar@nycstudents.net </li>
 
 
   </body>
